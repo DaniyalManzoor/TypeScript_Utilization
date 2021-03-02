@@ -84,3 +84,12 @@ let dani: PersonInterface = {
   name: "Dani",
   age: 24,
 };
+
+//------ Function TYPE -----
+
+// varaible as function
+let greet: Function;
+
+greet = () => {
+  console.log("Hello, again");
+};

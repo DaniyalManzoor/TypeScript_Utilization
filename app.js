@@ -50,3 +50,9 @@ var dani = {
     name: "Dani",
     age: 24,
 };
+//------ Function TYPE -----
+// varaible as function
+var greet;
+greet = function () {
+    console.log("Hello, again");
+};

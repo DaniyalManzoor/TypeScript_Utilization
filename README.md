@@ -115,7 +115,7 @@ month = "jan";
 month = 1;
 ```
 
-### Interface
+### Interface Type
 
 ```js
 interface PersonInterface {
@@ -126,5 +126,17 @@ interface PersonInterface {
 let person: PersonInterface = {
   name: "Dani",
   age: 24,
+};
+```
+
+### Function Type
+
+##### Varaible as Function Type
+
+```js
+let greet: Function;
+
+greet = () => {
+  console.log("Hello, again");
 };
 ```
