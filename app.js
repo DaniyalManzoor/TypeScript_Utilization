@@ -7,3 +7,7 @@ var aboolean;
 var fname = "dani";
 //generate error
 // fname = 24;
+//default behavior of JS
+var anyVar;
+anyVar = "dani";
+anyVar = 24;

@@ -8,3 +8,8 @@ let fname = "dani";
 
 //generate error
 // fname = 24;
+
+//default behavior of JS
+let anyVar: any;
+anyVar = "dani";
+anyVar = 24;
