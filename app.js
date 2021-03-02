@@ -28,3 +28,12 @@ var arrboolean = [false, true, false];
 //UNION ARRAY
 // let unionarr (string | number | boolean)[]
 var arrMix = [1, "a", true];
+// Tuple Array
+// index 0 must be string index 1 must be number
+var arrtuple;
+arrtuple = ["dani", 0];
+arrtuple = ["", 1];
+//generate error
+// arrtuple = [""];
+// arrtuple = [1];
+// arrtuple = [1,""];

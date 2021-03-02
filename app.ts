@@ -37,3 +37,15 @@ let arrboolean = [false, true, false];
 // let unionarr (string | number | boolean)[]
 
 let arrMix = [1, "a", true];
+
+// Tuple Array
+// index 0 must be string index 1 must be number
+
+let arrtuple: [string, number];
+arrtuple = ["dani", 0];
+arrtuple = ["", 1];
+
+//generate error
+// arrtuple = [""];
+// arrtuple = [1];
+// arrtuple = [1,""];
