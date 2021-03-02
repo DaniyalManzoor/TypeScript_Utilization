@@ -43,8 +43,6 @@ var person = {
     age: 24,
 };
 person.name = "KK";
-//can not add
-// person.email = "dani@gmail.com";
-//Error
-// person = "Change";
-// person.name = 10;
+var month;
+month = "jan";
+month = 1;

@@ -65,3 +65,11 @@ person.name = "KK";
 //Error
 // person = "Change";
 // person.name = 10;
+
+//------ CUSTOM TYPE ---------
+type stringOrNum = number | string;
+
+let month: stringOrNum;
+
+month = "jan";
+month = 1;
