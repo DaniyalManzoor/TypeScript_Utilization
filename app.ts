@@ -21,3 +21,19 @@ year = 2021;
 year = "2021";
 // //generate error
 // year = false;
+
+//----- Array String --------
+
+// let arr:type[];
+// -- string[]
+// -- Number[]
+// -- Boolean[]
+
+let arrstring = ["a", "b", "c"];
+let arrnumber = [0, 1, 2];
+let arrboolean = [false, true, false];
+
+//UNION ARRAY
+// let unionarr (string | number | boolean)[]
+
+let arrMix = [1, "a", true];
