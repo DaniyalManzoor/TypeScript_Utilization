@@ -140,3 +140,13 @@ greet = () => {
   console.log("Hello, again");
 };
 ```
+
+##### Function Parameter Type
+
+```js
+let greet: Function;
+
+greet = () => {
+  console.log("Hello, again");
+};
+```

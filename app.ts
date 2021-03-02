@@ -93,3 +93,10 @@ let greet: Function;
 greet = () => {
   console.log("Hello, again");
 };
+
+// Function Parameter Type
+let sum = (a: number, b: number) => {
+  console.log(a + b);
+};
+
+sum(1, 20);

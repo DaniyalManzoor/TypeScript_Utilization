@@ -56,3 +56,8 @@ var greet;
 greet = function () {
     console.log("Hello, again");
 };
+// Function Parameter Type
+var sum = function (a, b) {
+    console.log(a + b);
+};
+sum(1, 20);
