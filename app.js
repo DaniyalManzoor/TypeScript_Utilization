@@ -46,3 +46,7 @@ person.name = "KK";
 var month;
 month = "jan";
 month = 1;
+var dani = {
+    name: "Dani",
+    age: 24,
+};

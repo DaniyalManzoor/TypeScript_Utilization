@@ -73,3 +73,14 @@ let month: stringOrNum;
 
 month = "jan";
 month = 1;
+
+//------ Interface TYPE -----
+interface PersonInterface {
+  name: string;
+  age: number;
+}
+
+let dani: PersonInterface = {
+  name: "Dani",
+  age: 24,
+};

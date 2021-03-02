@@ -114,3 +114,17 @@ let month: stringOrNum;
 month = "jan";
 month = 1;
 ```
+
+### Interface
+
+```js
+interface PersonInterface {
+  name: string;
+  age: number;
+}
+
+let person: PersonInterface = {
+  name: "Dani",
+  age: 24,
+};
+```
