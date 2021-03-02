@@ -18,6 +18,12 @@ tsc init
 tsc <app.ts> <main.js>
 ```
 
+##### Watch
+
+```properties
+tsc -watch
+```
+
 # Type
 
 ### Varaible
