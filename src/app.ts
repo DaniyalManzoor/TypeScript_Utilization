@@ -117,3 +117,8 @@ let multi = (a: number, b: number, c: number = 1) => {
 
 multi(10, 20);
 multi(10, 20, 5);
+
+// Function return value Type
+let ret = (): number => {
+  return 1;
+};
