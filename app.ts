@@ -13,3 +13,11 @@ let fname = "dani";
 let anyVar: any;
 anyVar = "dani";
 anyVar = 24;
+
+//for multiple type UNION
+let year: string | number;
+
+year = 2021;
+year = "2021";
+// //generate error
+// year = false;

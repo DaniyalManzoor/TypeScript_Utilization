@@ -11,3 +11,9 @@ var fname = "dani";
 var anyVar;
 anyVar = "dani";
 anyVar = 24;
+//for multiple type UNION
+var year;
+year = 2021;
+year = "2021";
+// //generate error
+// year = false;
