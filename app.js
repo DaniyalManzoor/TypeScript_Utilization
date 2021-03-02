@@ -61,3 +61,10 @@ var sum = function (a, b) {
     console.log(a + b);
 };
 sum(1, 20);
+// Function Optional Parameter Type
+var sub = function (a, b, c) {
+    console.log(a - b);
+    console.log(c);
+};
+sub(10, 20);
+sub(10, 20, 40);

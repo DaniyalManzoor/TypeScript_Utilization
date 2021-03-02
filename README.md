@@ -150,3 +150,15 @@ greet = () => {
   console.log("Hello, again");
 };
 ```
+
+##### Function Optional Parameter Type
+
+```js
+let sub = (a: number, b: number, c?: number) => {
+  console.log(a - b);
+  console.log(c);
+};
+
+sub(10, 20);
+sub(10, 20, 40);
+```

@@ -100,3 +100,12 @@ let sum = (a: number, b: number) => {
 };
 
 sum(1, 20);
+
+// Function Optional Parameter Type
+let sub = (a: number, b: number, c?: number) => {
+  console.log(a - b);
+  console.log(c);
+};
+
+sub(10, 20);
+sub(10, 20, 40);
