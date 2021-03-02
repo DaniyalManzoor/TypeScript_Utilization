@@ -68,3 +68,10 @@ var sub = function (a, b, c) {
 };
 sub(10, 20);
 sub(10, 20, 40);
+// Function Default Parameter Type
+var multi = function (a, b, c) {
+    if (c === void 0) { c = 1; }
+    console.log(a * b * c);
+};
+multi(10, 20);
+multi(10, 20, 5);

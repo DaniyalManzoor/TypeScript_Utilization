@@ -109,3 +109,11 @@ let sub = (a: number, b: number, c?: number) => {
 
 sub(10, 20);
 sub(10, 20, 40);
+
+// Function Default Parameter Type
+let multi = (a: number, b: number, c: number = 1) => {
+  console.log(a * b * c);
+};
+
+multi(10, 20);
+multi(10, 20, 5);
