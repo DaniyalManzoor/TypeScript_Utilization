@@ -37,3 +37,14 @@ arrtuple = ["", 1];
 // arrtuple = [""];
 // arrtuple = [1];
 // arrtuple = [1,""];
+//------ OBJECT TYPE -----
+var person = {
+    name: "Dani",
+    age: 24,
+};
+person.name = "KK";
+//can not add
+// person.email = "dani@gmail.com";
+//Error
+// person = "Change";
+// person.name = 10;
