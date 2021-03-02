@@ -60,10 +60,10 @@ year = "2021";
 
 ### Array
 
-> let arrnum :number[];
-> let arrstring :string[];
-> let arrboolean :booleanr[];
-> let unionarr (string | number | boolean)[]
+- let arrnum :number[];
+- let arrstring :string[];
+- let arrboolean :booleanr[];
+- let unionarr (string | number | boolean)[]
 
 ##### Array String Type
 
