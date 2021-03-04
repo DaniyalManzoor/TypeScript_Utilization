@@ -187,3 +187,42 @@ let ret = (): number => {
   return 0;
 };
 ```
+
+### Function Signature
+
+- this function or rather this a variable can hold a function which follows this signature
+
+##### return void
+
+```js
+let gree: (a: string, b: string) => void;
+
+gree = (name: string, greeting: string) =>
+  console.log(`${name} says ${greeting}`);
+```
+
+##### return number
+
+```js
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action.toLowerCase() === "add") {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+};
+```
+
+##### take object as an argument
+
+```js
+let logDetails: (obj: { name: string, age: number }) => void;
+
+type person = { name: string, age: number };
+
+logDetails = (p: person) => {
+  console.log(`${p.name} is ${p.age} years old`);
+};
+```

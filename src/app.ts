@@ -122,3 +122,35 @@ multi(10, 20, 5);
 let ret = (): number => {
   return 1;
 };
+
+// Function Signature
+
+// this function or rather this a variable can hold a function which follows  this signature
+
+// Example 01
+
+let gree: (a: string, b: string) => void;
+
+gree = (name: string, greeting: string) =>
+  console.log(`${name} says ${greeting}`);
+
+//Example 02
+
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string) => {
+  if (action.toLowerCase() === "add") {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+};
+
+//Example 02
+let logDetails: (obj: { name: string; age: number }) => void;
+
+type person = { name: string; age: number };
+
+logDetails = (dani: person) => {
+  console.log(`${dani.name} is ${dani.age} years old`);
+};
