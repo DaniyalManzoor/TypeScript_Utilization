@@ -226,3 +226,17 @@ logDetails = (p: person) => {
   console.log(`${p.name} is ${p.age} years old`);
 };
 ```
+
+### DOM Element
+
+##### anchor
+
+```js
+// 1 way
+const anchor = document.querySelector("a")!;
+
+// 2 way
+if (anchor) {
+  console.log(anchor.href);
+}
+```
