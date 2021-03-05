@@ -9,7 +9,7 @@ npm i -g TypeScript
 ##### Start TypeScript
 
 ```properties
-tsc init
+tsc --init
 ```
 
 ##### Transpile
