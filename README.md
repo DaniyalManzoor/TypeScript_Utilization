@@ -9,7 +9,7 @@ npm i -g TypeScript
 ##### Start TypeScript
 
 ```properties
-tsc init
+tsc --init
 ```
 
 ##### Transpile
@@ -95,7 +95,7 @@ let arrboolean = [false, true, false];
 let arrMix = [1, "a", true];
 ```
 
-##### Array Typle Type
+##### Array Tuple Type
 
 ```js
 let arrtuple: [string, number];
