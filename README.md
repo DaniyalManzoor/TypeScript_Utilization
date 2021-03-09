@@ -192,7 +192,7 @@ let ret = (): number => {
 
 - this function or rather this a variable can hold a function which follows this signature
 
-##### return void
+##### Return void
 
 ```js
 let gree: (a: string, b: string) => void;
@@ -201,7 +201,7 @@ gree = (name: string, greeting: string) =>
   console.log(`${name} says ${greeting}`);
 ```
 
-##### return number
+##### Return number
 
 ```js
 let calc: (a: number, b: number, c: string) => number;
@@ -215,7 +215,7 @@ calc = (numOne: number, numTwo: number, action: string) => {
 };
 ```
 
-##### take object as an argument
+##### Take object as an argument
 
 ```js
 let logDetails: (obj: { name: string, age: number }) => void;
@@ -229,7 +229,7 @@ logDetails = (p: person) => {
 
 ### DOM Element
 
-##### anchor
+##### Anchor
 
 ```js
 // 1 way
@@ -239,4 +239,25 @@ const anchor = document.querySelector("a")!;
 if (anchor) {
   console.log(anchor.href);
 }
+```
+
+##### ELement
+
+```js
+// Type of Element
+const form = document.querySelector(".new-item-form") as HTMLFormElement;
+console.log(form.children);
+
+// input type
+const type = document.querySelector("#type") as HTMLSelectElement;
+const tofrom = document.querySelector("#toform") as HTMLInputElement;
+const details = document.querySelector("#details") as HTMLInputElement;
+const amount = document.querySelector("#amount") as HTMLInputElement;
+
+//Events
+form.addEventListener("submit", (e: Event) => {
+  e.preventDefault();
+  console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
+});
+
 ```

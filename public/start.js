@@ -39,66 +39,65 @@ arrtuple = ["", 1];
 // arrtuple = [1,""];
 //------ OBJECT TYPE -----
 var person = {
-  name: "Dani",
-  age: 24,
+    name: "Dani",
+    age: 24,
 };
 person.name = "KK";
 var month;
 month = "jan";
 month = 1;
 var dani = {
-  name: "Dani",
-  age: 24,
+    name: "Dani",
+    age: 24,
 };
 //------ Function TYPE -----
 // varaible as function
 var greet;
 greet = function () {
-  console.log("Hello, again");
+    console.log("Hello, again");
 };
 // Function Parameter Type
 var sum = function (a, b) {
-  console.log(a + b);
+    console.log(a + b);
 };
 sum(1, 20);
 // Function Optional Parameter Type
 var sub = function (a, b, c) {
-  console.log(a - b);
-  console.log(c);
+    console.log(a - b);
+    console.log(c);
 };
 sub(10, 20);
 sub(10, 20, 40);
 // Function Default Parameter Type
 var multi = function (a, b, c) {
-  if (c === void 0) {
-    c = 1;
-  }
-  console.log(a * b * c);
+    if (c === void 0) { c = 1; }
+    console.log(a * b * c);
 };
 multi(10, 20);
 multi(10, 20, 5);
 // Function return value Type
 var ret = function () {
-  return 1;
+    return 1;
 };
 // Function Signature
 // this function or rather this a variable can hold a function which follows  this signature
 // Example 01
 var gree;
 gree = function (name, greeting) {
-  return console.log(name + " says " + greeting);
+    return console.log(name + " says " + greeting);
 };
 //Example 02
 var calc;
 calc = function (numOne, numTwo, action) {
-  if (action.toLowerCase() === "add") {
-    return numOne + numTwo;
-  } else {
-    return numOne - numTwo;
-  }
+    if (action.toLowerCase() === "add") {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
 //Example 02
 var logDetails;
 logDetails = function (dani) {
-  console.log(dani.name + " is " + dani.age + " years old");
+    console.log(dani.name + " is " + dani.age + " years old");
 };
