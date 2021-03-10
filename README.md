@@ -299,27 +299,27 @@ console.log(invoices);
 ```js
 
 class Invoice {
-//keyword public, private readonly
+  //keyword public, private readonly
 // 1st ways
 // readonly client: string;
 // private details: string;
 // public amount: number;
 
 // constructor(c: string, d: string, a: number) {
-// this.client = c;
+  // this.client = c;
 // this.details = d;
 // this.amount = a;
 // }
 
 // 2nd ways
 constructor(
-readonly client: string,
+  readonly client: string,
 private details: string,
 public amount: number
 ) {}
 
 format() {
-console.log(`${this.client} owns of $${this.amount} for ${this.details}`);
+  console.log(`${this.client} owns of $${this.amount} for ${this.details}`);
 }
 }
 
@@ -335,4 +335,50 @@ invoices.push(invTwo);
 
 console.log(invoices);
 
+```
+
+### Interface
+
+##### Interface with class
+
+```js
+interface HasFormatter {
+  format(): string;
+}
+
+class Invoice implements HasFormatter {
+  constructor(
+    readonly client: string,
+    private details: string,
+    public amount: number
+  ) {}
+
+  format() {
+    return `${this.client} owes of $${this.amount} for ${this.details}`;
+  }
+}
+
+class Payment implements HasFormatter {
+  constructor(
+    readonly recipient: string,
+    private details: string,
+    public amount: number
+  ) {}
+
+  format() {
+    return `${this.recipient} is owed of $${this.amount} for ${this.details}`;
+  }
+}
+
+let docOne: HasFormatter;
+let docTwo: HasFormatter;
+
+docOne = new Payment("dani", "working on Typescript", 200);
+docTwo = new Invoice("zobi", "working on static website", 200);
+
+let docs: HasFormatter[] = [];
+docs.push(docOne);
+docs.push(docTwo);
+
+console.log(docs)
 ```
