@@ -5,6 +5,6 @@ export class Invoice {
         this.amount = amount;
     }
     format() {
-        console.log(`${this.client} owns of $${this.amount} for ${this.details}`);
+        return `${this.client} owes of $${this.amount} for ${this.details}`;
     }
 }
