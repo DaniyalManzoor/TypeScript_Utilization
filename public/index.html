@@ -13,25 +13,25 @@
       <ul class="item-list"></ul>
     </div>
     <footer>
-      <form action="" class="new-item-form">
+      <form class="new-item-form">
         <div class="field">
           <label for="">Type:</label>
-          <section id="type">
+          <select id="type">
             <option value="invoice">Invoice</option>
             <option value="payment">Payment</option>
-          </section>
+          </select>
         </div>
         <div class="field">
           <label for="">To / From:</label>
-          <input type="text" id="toform" />
+          <input type="text" id="tofrom" />
         </div>
         <div class="field">
-          <label for="">details </label>
+          <label for="">Details: </label>
           <input type="text" id="details" />
         </div>
         <div class="field">
-          <label for="">Amount:</label>
-          <input type="text" id="amount" />
+          <label>Amount (£):</label>
+          <input type="number" id="amount" />
         </div>
         <button>Add</button>
       </form>
