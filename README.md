@@ -264,7 +264,7 @@ form.addEventListener("submit", (e: Event) => {
 
 ### Class
 
-#### Simple class
+##### Simple class
 
 ```js
 class Invoice {
@@ -292,4 +292,47 @@ invoices.push(invOne);
 invoices.push(invTwo);
 
 console.log(invoices);
+```
+
+##### Access Modifier
+
+```js
+
+class Invoice {
+//keyword public, private readonly
+// 1st ways
+// readonly client: string;
+// private details: string;
+// public amount: number;
+
+// constructor(c: string, d: string, a: number) {
+// this.client = c;
+// this.details = d;
+// this.amount = a;
+// }
+
+// 2nd ways
+constructor(
+readonly client: string,
+private details: string,
+public amount: number
+) {}
+
+format() {
+console.log(`${this.client} owns of $${this.amount} for ${this.details}`);
+}
+}
+
+const invOne = new Invoice("nihan", "work on the nihan website", 250);
+const invTwo = new Invoice("shahyan", "work on the shahyan website", 300);
+
+// console.log(invOne, invTwo);
+
+// if i want to make a array on invoice
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+invoices.push(invTwo);
+
+console.log(invoices);
+
 ```

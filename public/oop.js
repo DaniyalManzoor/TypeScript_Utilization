@@ -1,9 +1,20 @@
 "use strict";
 var Invoice = /** @class */ (function () {
-    function Invoice(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    //keyword public, private readonly
+    //   1st ways
+    //   readonly client: string;
+    //   private details: string;
+    //   public amount: number;
+    //   constructor(c: string, d: string, a: number) {
+    //     this.client = c;
+    //     this.details = d;
+    //     this.amount = a;
+    //   }
+    // 2nd ways
+    function Invoice(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     Invoice.prototype.format = function () {
         console.log(this.client + " owns of $" + this.amount + " for " + this.details);

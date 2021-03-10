@@ -1,12 +1,23 @@
 class Invoice {
-  client: string;
-  details: string;
-  amount: number;
-  constructor(c: string, d: string, a: number) {
-    this.client = c;
-    this.details = d;
-    this.amount = a;
-  }
+  //keyword public, private readonly
+  //   1st ways
+  //   readonly client: string;
+  //   private details: string;
+  //   public amount: number;
+
+  //   constructor(c: string, d: string, a: number) {
+  //     this.client = c;
+  //     this.details = d;
+  //     this.amount = a;
+  //   }
+
+  // 2nd ways
+  constructor(
+    readonly client: string,
+    private details: string,
+    public amount: number
+  ) {}
+
   format() {
     console.log(`${this.client} owns of $${this.amount} for ${this.details}`);
   }
