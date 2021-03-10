@@ -7,15 +7,15 @@
 //   console.log(anchor.href);
 // }
 // Type of Element
-var form = document.querySelector(".new-item-form");
+const form = document.querySelector(".new-item-form");
 console.log(form.children);
 // input type
-var type = document.querySelector("#type");
-var tofrom = document.querySelector("#toform");
-var details = document.querySelector("#details");
-var amount = document.querySelector("#amount");
+const type = document.querySelector("#type");
+const tofrom = document.querySelector("#toform");
+const details = document.querySelector("#details");
+const amount = document.querySelector("#amount");
 //Events
-form.addEventListener("submit", function (e) {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
