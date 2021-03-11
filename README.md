@@ -26,7 +26,7 @@ tsc -watch
 
 # Type
 
-### Varaible
+### Variable
 
 ##### Number Type
 
@@ -137,7 +137,7 @@ let person: PersonInterface = {
 
 ### Function Type
 
-##### Varaible as Function Type
+##### Variable as Function Type
 
 ```js
 let greet: Function;
@@ -409,5 +409,35 @@ const docFour: Resource<object> = {
   uid: 2,
   resourceName: "shopingList",
   data: { product1: "Tie" },
+};
+```
+
+### ENUM
+
+Enums are used when we know all possible values at compile time, such as choices on a menu, rounding modes, command line flags, etc. It is not necessary that the set of constants in an enum type stay fixed for all time
+
+```js
+enum ResourceType {
+  BOOK,
+  AUTHOR,
+  FILM,
+  DIRECTOR,
+  PERSON,
+}
+interface Resource2<T> {
+  uid: number;
+  resourceType: ResourceType;
+  data: T;
+}
+
+const docEight: Resource2<object> = {
+  uid: 2,
+  resourceType: ResourceType.BOOK,
+  data: { title: "name of the wind" },
+};
+const docNine: Resource2<string[]> = {
+  uid: 4,
+  resourceType: ResourceType.AUTHOR,
+  data: ["John", "mosh"],
 };
 ```
